@@ -1,0 +1,138 @@
+/* Estilos globais */
+body {
+    /* Define a fonte padrão para Arial, usando outras fontes sans-serif como fallback */
+    font-family: Arial, sans-serif;
+    /* Define a cor de fundo do corpo da página para um tom claro de cinza */
+    background-color: #f4f4f4;
+    /* Remove as margens padrão do corpo */
+    margin: 0;
+    /* Remove o preenchimento padrão do corpo */
+    padding: 0;
+    /* Define a altura da linha para melhorar a legibilidade do texto */
+    line-height: 1.6;
+}
+
+/* Animações */
+.animated-section {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateX(-50px); /* Desloca as seções 50px para a esquerda */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transição suave */
+}
+
+.animated-section.active {
+    opacity: 1; /* Torna a seção visível */
+    transform: translateX(0); /* Move a seção para sua posição original */
+}
+
+
+/* Cabeçalho */
+header {
+    /* Define uma cor de fundo escura para o cabeçalho */
+    background-color: #333;
+    /* Define a cor do texto como branco para contraste */
+    color: #fff;
+    /* Adiciona um espaçamento interno ao redor do conteúdo do cabeçalho */
+    padding: 1rem;
+    /* Centraliza o conteúdo do cabeçalho */
+    text-align: center;
+}
+
+header h1 {
+    /* Remove a margem padrão do elemento h1 dentro do cabeçalho */
+    margin: 0;
+}
+
+/* Navegação */
+nav ul {
+    /* Exibe a lista de navegação em uma linha horizontal */
+    display: flex;
+    /* Centraliza os itens da lista horizontalmente */
+    justify-content: center;
+    /* Remove o preenchimento interno padrão da lista */
+    padding: 0;
+    /* Remove as marcações de lista padrão */
+    list-style: none;
+    /* Define uma cor de fundo para a área de navegação */
+    background-color: #444;
+    /* Remove a margem padrão da lista */
+    margin: 0;
+}
+
+nav ul li {
+    /* Define um espaçamento entre os itens da lista para separar os links */
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    /* Define a cor do texto dos links como branco */
+    color: #fff;
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+    /* Adiciona preenchimento para tornar os links mais clicáveis */
+    padding: 0.5rem 1rem;
+    /* Faz com que os links ocupem toda a área disponível */
+    display: block;
+}
+
+nav ul li a:hover {
+    /* Muda a cor de fundo dos links ao passar o mouse para indicar interatividade */
+    background-color: #555;
+    /* Adiciona cantos arredondados aos links ao passar o mouse */
+    border-radius: 5px;
+}
+
+/* Estilos principais */
+main {
+    /* Adiciona espaçamento ao redor do conteúdo principal */
+    padding: 2rem;
+}
+
+section {
+    /* Adiciona uma margem entre as seções para separá-las */
+    margin: 2rem 0;
+    /* Adiciona preenchimento dentro das seções para dar espaço ao conteúdo */
+    padding: 1rem;
+    /* Define a cor de fundo das seções como branco */
+    background-color: #fff;
+    /* Adiciona uma borda cinza clara em volta das seções */
+    border: 1px solid #ddd;
+    /* Arredonda levemente os cantos das seções */
+    border-radius: 5px;
+}
+
+section h2 {
+    /* Define a cor do texto dos títulos das seções como um tom escuro de cinza */
+    color: #333;
+}
+
+/* Barra lateral (aside) */
+aside {
+    /* Define uma cor de fundo cinza claro para a barra lateral */
+    background-color: #eee;
+    /* Adiciona preenchimento interno para o conteúdo da barra lateral */
+    padding: 1rem;
+    /* Adiciona uma margem ao redor da barra lateral para separá-la do conteúdo principal */
+    margin: 2rem;
+    /* Adiciona uma borda cinza clara ao redor da barra lateral */
+    border: 1px solid #ddd;
+    /* Arredonda os cantos da barra lateral */
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    /* Define uma cor de fundo escura para o rodapé */
+    background-color: #333;
+    /* Define a cor do texto do rodapé como branco */
+    color: #fff;
+    /* Centraliza o texto dentro do rodapé */
+    text-align: center;
+    /* Adiciona preenchimento ao redor do texto do rodapé */
+    padding: 1rem;
+    /* Define a posição do rodapé como relativa, para mantê-lo na parte inferior */
+    position: relative;
+    /* Posiciona o rodapé na parte inferior da página */
+    bottom: 0;
+    /* Faz com que o rodapé ocupe toda a largura da página */
+    width: 100%;
+}
